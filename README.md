@@ -37,11 +37,14 @@ Run `plop` to see the list of generators, or run `plop [generator]` to use that 
 
 ## Available generators
 1. `init`: generates the initial folder and `index.js` to import all reducers and combine them.
+
   ```
   > plop init
   [CREATE] ./app/redux/index.js
   ```
+  
 2. `reducer`: generates a reducer folder within the initial folder. Optionally generates action creators and selectors file.
+  
   ```
   > plop reducer
   > Reducer name: my initial reducer
@@ -49,7 +52,9 @@ Run `plop` to see the list of generators, or run `plop [generator]` to use that 
   [CREATE] ./app/redux/myInitialReducer/reducer.spec.js
   [MODIFY] ./app/redux/index.js
   ```
+  
 3. `reducer:action`: generates an action for a given reducer. Optionally generates action creator.
+  
   ```
   > plop reducer:action
   > Reducer name: myInitialReducer
@@ -58,6 +63,7 @@ Run `plop` to see the list of generators, or run `plop [generator]` to use that 
   [MODIFY] ./app/redux/myInitialReducer/reducer.js
   [MODIFY] ./app/redux/myInitialReducer/reducer.spec.js
   ```
+  
   ```
   > plop reducer:action
   > Reducer name: myInitialReducer
@@ -68,14 +74,18 @@ Run `plop` to see the list of generators, or run `plop [generator]` to use that 
   [MODIFY] ./app/redux/myInitialReducer/actions.js
   [MODIFY] ./app/redux/myInitialReducer/actions.spec.js
   ```
+  
 4. `actions`: generates the action creators file for a given reducer.
+  
   ```
   > plop actions
   > Reducer name: myInitialReducer
   [CREATE] ./app/redux/myInitialReducer/actions.js
   [CREATE] ./app/redux/myInitialReducer/actions.spec.js
   ```
+  
 5. `actions:action`: generates an action within a given reducer folder (it does not add the action to the reducer.js file).
+  
   ```
   > plop actions:action
   > Reducer name: myInitialReducer
@@ -83,14 +93,18 @@ Run `plop` to see the list of generators, or run `plop [generator]` to use that 
   [MODIFY] ./app/redux/myInitialReducer/actions.js
   [MODIFY] ./app/redux/myInitialReducer/actions.spec.js
   ```
+  
 6. `selectors`: generates selectors file for a given reducer.
+  
   ```
   > plop selectors
   > Reducer name: myInitialReducer
   [CREATE] ./app/redux/myInitialReducer/selectors.js
   [CREATE] ./app/redux/myInitialReducer/selectors.spec.js
   ```
-5. `selectors:selector`: generates a selector within a given reducer folder.
+  
+7. `selectors:selector`: generates a selector within a given reducer folder.
+  
   ```
   > plop selectors:selector
   > Reducer name: myInitialReducer
