@@ -1,0 +1,8 @@
+
+export const {{ constantCase actionName }} = '{{> reducerName }}/{{ constantCase actionName }}'
+export function {{ camelCase actionName }} () {
+  return {
+    type: {{ constantCase actionName }},
+    payload: {}
+  }
+}

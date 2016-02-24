@@ -1,0 +1,11 @@
+{{#indexOf Features 'actions'}}
+import * as actions from './actions'
+
+{{/indexOf}}
+const defaultState = null
+export default function {{> reducerName }} (state = defaultState, { type, payload }) {
+  switch (type) {
+    default:
+      return state
+  }
+}

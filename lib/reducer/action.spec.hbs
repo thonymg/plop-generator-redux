@@ -1,0 +1,17 @@
+
+  it('should handle the {{ camelCase actionName }} action', () => {
+    const stateBefore = null
+    const stateAfter = null
+
+    expect(
+      {{#if actionCreator}}
+      reducer(stateBefore, actions.{{ camelCase actionName }}())
+      {{else}}
+      reducer(stateBefore, {
+        type: '{{> reducerName }}/{{ constantCase actionName }}',
+        payload: {}
+      })
+      {{/if}}
+    ).toEqual(stateAfter)
+  })
+$1

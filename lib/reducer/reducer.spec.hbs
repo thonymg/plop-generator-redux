@@ -1,0 +1,12 @@
+import reducer from './reducer'
+{{#indexOf Features 'actions'}}
+import * as actions from './actions'
+{{/indexOf}}
+
+describe('REDUCER: {{> reducerName }}', () => {
+  it('should return the initial state', () => {
+    expect(
+      reducer(undefined, {})
+    ).toEqual(null)
+  })
+})

@@ -1,0 +1,8 @@
+import { createSelector } from 'reselect'
+
+export const get{{ properCase reducerNameInput }} = createSelector(
+  (state) => state.{{> reducerName }},
+  ({{> reducerName }}) => {
+    return { {{> reducerName }} }
+  }
+)

@@ -1,0 +1,8 @@
+{{#if actionCreator}}
+case actions.{{ constantCase actionName }}:
+{{else}}
+case '{{> reducerName }}/{{ constantCase actionName }}':
+{{/if}}
+      return state
+
+    $1

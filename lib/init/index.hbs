@@ -1,0 +1,10 @@
+import { combineReducers } from 'redux'
+{{#if reduxRouter}}
+import { routeReducer as routing } from 'react-router-redux'
+{{/if}}
+
+export default combineReducers({
+  {{#if reduxRouter}}
+  routing
+  {{/if}}
+})

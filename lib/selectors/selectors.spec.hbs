@@ -1,0 +1,12 @@
+import * as selectors from './selectors'
+
+describe('SELECTORS: {{> reducerName }}', () => {
+  it('should select get{{ properCase reducerNameInput }}', () => {
+    const stateAfter = null
+    const stateBefore = null
+
+    expect(
+      selectors.get{{ properCase reducerNameInput }}({ {{> reducerName }}: stateAfter })
+    ).toEqual({ {{> reducerName }}: stateBefore })
+  })
+})
